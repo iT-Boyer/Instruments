@@ -10,6 +10,13 @@
 		84D9E642219AE110000A39D0 /* hsg_lib_Instruments.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84D9E638219AE110000A39D0 /* hsg_lib_Instruments.framework */; };
 		84D9E647219AE110000A39D0 /* hsg_lib_InstrumentsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D9E646219AE110000A39D0 /* hsg_lib_InstrumentsTests.swift */; };
 		84D9E649219AE110000A39D0 /* hsg_lib_Instruments.h in Headers */ = {isa = PBXBuildFile; fileRef = 84D9E63B219AE110000A39D0 /* hsg_lib_Instruments.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		84D9E65C219AE293000A39D0 /* Instruments.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84D9E65B219AE293000A39D0 /* Instruments.storyboard */; };
+		84D9E65F219AECE1000A39D0 /* InstrumentsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D9E65E219AECE1000A39D0 /* InstrumentsController.swift */; };
+		84D9E67E219AF3E6000A39D0 /* FlickrSearcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D9E67B219AF3E5000A39D0 /* FlickrSearcher.swift */; };
+		84D9E67F219AF3E6000A39D0 /* ImageUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D9E67C219AF3E5000A39D0 /* ImageUtilities.swift */; };
+		84D9E680219AF3E6000A39D0 /* SearchResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D9E67D219AF3E5000A39D0 /* SearchResultsViewController.swift */; };
+		84D9E682219AF4AB000A39D0 /* images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84D9E681219AF4AB000A39D0 /* images.xcassets */; };
+		C0CDD39E85B3407F09D2CACE /* Pods_hsg_lib_Instruments.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38728205E0BA4625A28E65FB /* Pods_hsg_lib_Instruments.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,12 +30,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		38728205E0BA4625A28E65FB /* Pods_hsg_lib_Instruments.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_hsg_lib_Instruments.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		55ADCA5C2A748AA292D447D9 /* Pods-hsg.lib.Instruments.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hsg.lib.Instruments.release.xcconfig"; path = "../../../../Pods/Target Support Files/Pods-hsg.lib.Instruments/Pods-hsg.lib.Instruments.release.xcconfig"; sourceTree = "<group>"; };
+		5A34D58944F7546C4C911782 /* Pods-hsg.lib.Instruments.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hsg.lib.Instruments.debug.xcconfig"; path = "../../../../Pods/Target Support Files/Pods-hsg.lib.Instruments/Pods-hsg.lib.Instruments.debug.xcconfig"; sourceTree = "<group>"; };
 		84D9E638219AE110000A39D0 /* hsg_lib_Instruments.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = hsg_lib_Instruments.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84D9E63B219AE110000A39D0 /* hsg_lib_Instruments.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hsg_lib_Instruments.h; sourceTree = "<group>"; };
 		84D9E63C219AE110000A39D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84D9E641219AE110000A39D0 /* hsg.lib.InstrumentsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = hsg.lib.InstrumentsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84D9E646219AE110000A39D0 /* hsg_lib_InstrumentsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hsg_lib_InstrumentsTests.swift; sourceTree = "<group>"; };
 		84D9E648219AE110000A39D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84D9E65B219AE293000A39D0 /* Instruments.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Instruments.storyboard; sourceTree = "<group>"; };
+		84D9E65E219AECE1000A39D0 /* InstrumentsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstrumentsController.swift; sourceTree = "<group>"; };
+		84D9E67B219AF3E5000A39D0 /* FlickrSearcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlickrSearcher.swift; sourceTree = "<group>"; };
+		84D9E67C219AF3E5000A39D0 /* ImageUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageUtilities.swift; sourceTree = "<group>"; };
+		84D9E67D219AF3E5000A39D0 /* SearchResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultsViewController.swift; sourceTree = "<group>"; };
+		84D9E681219AF4AB000A39D0 /* images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0CDD39E85B3407F09D2CACE /* Pods_hsg_lib_Instruments.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,12 +67,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		462548FBB5CB1D643F193BBA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				38728205E0BA4625A28E65FB /* Pods_hsg_lib_Instruments.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		84D9E62E219AE110000A39D0 = {
 			isa = PBXGroup;
 			children = (
 				84D9E63A219AE110000A39D0 /* hsg.lib.Instruments */,
 				84D9E645219AE110000A39D0 /* hsg.lib.InstrumentsTests */,
 				84D9E639219AE110000A39D0 /* Products */,
+				F5CDA26678311202AC58FA0D /* Pods */,
+				462548FBB5CB1D643F193BBA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,8 +98,14 @@
 		84D9E63A219AE110000A39D0 /* hsg.lib.Instruments */ = {
 			isa = PBXGroup;
 			children = (
-				84D9E63B219AE110000A39D0 /* hsg_lib_Instruments.h */,
 				84D9E63C219AE110000A39D0 /* Info.plist */,
+				84D9E63B219AE110000A39D0 /* hsg_lib_Instruments.h */,
+				84D9E67B219AF3E5000A39D0 /* FlickrSearcher.swift */,
+				84D9E67C219AF3E5000A39D0 /* ImageUtilities.swift */,
+				84D9E67D219AF3E5000A39D0 /* SearchResultsViewController.swift */,
+				84D9E65E219AECE1000A39D0 /* InstrumentsController.swift */,
+				84D9E65B219AE293000A39D0 /* Instruments.storyboard */,
+				84D9E681219AF4AB000A39D0 /* images.xcassets */,
 			);
 			path = hsg.lib.Instruments;
 			sourceTree = "<group>";
@@ -84,6 +117,15 @@
 				84D9E648219AE110000A39D0 /* Info.plist */,
 			);
 			path = hsg.lib.InstrumentsTests;
+			sourceTree = "<group>";
+		};
+		F5CDA26678311202AC58FA0D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5A34D58944F7546C4C911782 /* Pods-hsg.lib.Instruments.debug.xcconfig */,
+				55ADCA5C2A748AA292D447D9 /* Pods-hsg.lib.Instruments.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -104,6 +146,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 84D9E64C219AE110000A39D0 /* Build configuration list for PBXNativeTarget "hsg.lib.Instruments" */;
 			buildPhases = (
+				7E5861CE2C70086DD17E9556 /* [CP] Check Pods Manifest.lock */,
 				84D9E633219AE110000A39D0 /* Headers */,
 				84D9E634219AE110000A39D0 /* Sources */,
 				84D9E635219AE110000A39D0 /* Frameworks */,
@@ -148,6 +191,7 @@
 				TargetAttributes = {
 					84D9E637219AE110000A39D0 = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
 					};
 					84D9E640219AE110000A39D0 = {
 						CreatedOnToolsVersion = 10.0;
@@ -177,6 +221,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84D9E65C219AE293000A39D0 /* Instruments.storyboard in Resources */,
+				84D9E682219AF4AB000A39D0 /* images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,11 +235,40 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7E5861CE2C70086DD17E9556 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-hsg.lib.Instruments-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		84D9E634219AE110000A39D0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84D9E65F219AECE1000A39D0 /* InstrumentsController.swift in Sources */,
+				84D9E680219AF3E6000A39D0 /* SearchResultsViewController.swift in Sources */,
+				84D9E67F219AF3E6000A39D0 /* ImageUtilities.swift in Sources */,
+				84D9E67E219AF3E6000A39D0 /* FlickrSearcher.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,7 +415,9 @@
 		};
 		84D9E64D219AE110000A39D0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A34D58944F7546C4C911782 /* Pods-hsg.lib.Instruments.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -358,6 +435,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "hsg.com.hsg-lib-Instruments";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -365,7 +443,9 @@
 		};
 		84D9E64E219AE110000A39D0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55ADCA5C2A748AA292D447D9 /* Pods-hsg.lib.Instruments.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -391,6 +471,7 @@
 		84D9E650219AE110000A39D0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9CA5KUE8T7;
 				INFOPLIST_FILE = hsg.lib.InstrumentsTests/Info.plist;
@@ -409,6 +490,7 @@
 		84D9E651219AE110000A39D0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9CA5KUE8T7;
 				INFOPLIST_FILE = hsg.lib.InstrumentsTests/Info.plist;
