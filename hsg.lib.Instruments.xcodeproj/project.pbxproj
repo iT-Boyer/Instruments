@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8412A96121A1C05400D36C28 /* MyInstrument.instrpkg in Sources */ = {isa = PBXBuildFile; fileRef = 8412A96021A1C05400D36C28 /* MyInstrument.instrpkg */; };
 		84D9E642219AE110000A39D0 /* hsg_lib_Instruments.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84D9E638219AE110000A39D0 /* hsg_lib_Instruments.framework */; };
 		84D9E647219AE110000A39D0 /* hsg_lib_InstrumentsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D9E646219AE110000A39D0 /* hsg_lib_InstrumentsTests.swift */; };
 		84D9E649219AE110000A39D0 /* hsg_lib_Instruments.h in Headers */ = {isa = PBXBuildFile; fileRef = 84D9E63B219AE110000A39D0 /* hsg_lib_Instruments.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -33,6 +34,8 @@
 		38728205E0BA4625A28E65FB /* Pods_hsg_lib_Instruments.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_hsg_lib_Instruments.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		55ADCA5C2A748AA292D447D9 /* Pods-hsg.lib.Instruments.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hsg.lib.Instruments.release.xcconfig"; path = "../../../../Pods/Target Support Files/Pods-hsg.lib.Instruments/Pods-hsg.lib.Instruments.release.xcconfig"; sourceTree = "<group>"; };
 		5A34D58944F7546C4C911782 /* Pods-hsg.lib.Instruments.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hsg.lib.Instruments.debug.xcconfig"; path = "../../../../Pods/Target Support Files/Pods-hsg.lib.Instruments/Pods-hsg.lib.Instruments.debug.xcconfig"; sourceTree = "<group>"; };
+		8412A95E21A1C05400D36C28 /* MyInstrument.instrdst */ = {isa = PBXFileReference; explicitFileType = com.apple.instruments.instrdst; includeInIndex = 0; path = MyInstrument.instrdst; sourceTree = BUILT_PRODUCTS_DIR; };
+		8412A96021A1C05400D36C28 /* MyInstrument.instrpkg */ = {isa = PBXFileReference; lastKnownFileType = "com.apple.instruments.package-definition"; path = MyInstrument.instrpkg; sourceTree = "<group>"; };
 		84D9E638219AE110000A39D0 /* hsg_lib_Instruments.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = hsg_lib_Instruments.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84D9E63B219AE110000A39D0 /* hsg_lib_Instruments.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hsg_lib_Instruments.h; sourceTree = "<group>"; };
 		84D9E63C219AE110000A39D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -75,11 +78,20 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		8412A95F21A1C05400D36C28 /* MyInstrument */ = {
+			isa = PBXGroup;
+			children = (
+				8412A96021A1C05400D36C28 /* MyInstrument.instrpkg */,
+			);
+			path = MyInstrument;
+			sourceTree = "<group>";
+		};
 		84D9E62E219AE110000A39D0 = {
 			isa = PBXGroup;
 			children = (
 				84D9E63A219AE110000A39D0 /* hsg.lib.Instruments */,
 				84D9E645219AE110000A39D0 /* hsg.lib.InstrumentsTests */,
+				8412A95F21A1C05400D36C28 /* MyInstrument */,
 				84D9E639219AE110000A39D0 /* Products */,
 				F5CDA26678311202AC58FA0D /* Pods */,
 				462548FBB5CB1D643F193BBA /* Frameworks */,
@@ -91,6 +103,7 @@
 			children = (
 				84D9E638219AE110000A39D0 /* hsg_lib_Instruments.framework */,
 				84D9E641219AE110000A39D0 /* hsg.lib.InstrumentsTests.xctest */,
+				8412A95E21A1C05400D36C28 /* MyInstrument.instrdst */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -142,6 +155,21 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		8412A95D21A1C05400D36C28 /* MyInstrument */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8412A96421A1C05400D36C28 /* Build configuration list for PBXNativeTarget "MyInstrument" */;
+			buildPhases = (
+				8412A95C21A1C05400D36C28 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyInstrument;
+			productName = MyInstrument;
+			productReference = 8412A95E21A1C05400D36C28 /* MyInstrument.instrdst */;
+			productType = "com.apple.product-type.instruments-package";
+		};
 		84D9E637219AE110000A39D0 /* hsg.lib.Instruments */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 84D9E64C219AE110000A39D0 /* Build configuration list for PBXNativeTarget "hsg.lib.Instruments" */;
@@ -189,6 +217,9 @@
 				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = clcw;
 				TargetAttributes = {
+					8412A95D21A1C05400D36C28 = {
+						CreatedOnToolsVersion = 10.1;
+					};
 					84D9E637219AE110000A39D0 = {
 						CreatedOnToolsVersion = 10.0;
 						LastSwiftMigration = 1000;
@@ -212,6 +243,7 @@
 			targets = (
 				84D9E637219AE110000A39D0 /* hsg.lib.Instruments */,
 				84D9E640219AE110000A39D0 /* hsg.lib.InstrumentsTests */,
+				8412A95D21A1C05400D36C28 /* MyInstrument */,
 			);
 		};
 /* End PBXProject section */
@@ -261,6 +293,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		8412A95C21A1C05400D36C28 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8412A96121A1C05400D36C28 /* MyInstrument.instrpkg in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		84D9E634219AE110000A39D0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -291,6 +331,30 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		8412A96221A1C05400D36C28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2C4H9T5RF5;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Instruments/Packages";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VERSIONING_SYSTEM = "";
+			};
+			name = Debug;
+		};
+		8412A96321A1C05400D36C28 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2C4H9T5RF5;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Instruments/Packages";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VERSIONING_SYSTEM = "";
+			};
+			name = Release;
+		};
 		84D9E64A219AE110000A39D0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -509,6 +573,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		8412A96421A1C05400D36C28 /* Build configuration list for PBXNativeTarget "MyInstrument" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8412A96221A1C05400D36C28 /* Debug */,
+				8412A96321A1C05400D36C28 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		84D9E632219AE110000A39D0 /* Build configuration list for PBXProject "hsg.lib.Instruments" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
