@@ -5,9 +5,47 @@
 	<owner>
 		<name>admin</name>
 	</owner>
-
+    <!--导入自定义的tick表格-->
+    <import-schema>tick</import-schema>
+    
+    <!--自定义Instruments的表格-->
+    <instrument>
+        <id>hsg.lib.MyInstrument</id>
+        <title>Ticks</title>
+        <category>Behavior</category>
+        <purpose>Instrument 每隔10s绘制</purpose>
+        <icon>Generic</icon>
+        
+        <create-table>
+            <id>tick-table</id>
+            <schema-ref>tick</schema-ref>
+        </create-table>
+        
+        <!--图形工具-->
+        <graph>
+            <title>Ticks</title>
+            <lane> <!--跟踪通道-->
+                <title>Ticks</title>
+                <table-ref>tick-table</table-ref>
+                <!-- 使用plot, plot-template or histogram elements -->
+                <!--指定通道绘制的内容-->
+                <plot>
+                    <value-from>time</value-from>
+                </plot>
+            </lane>
+        </graph>
+        <!--列表工具-->
+        <list>
+            <title>Ticks</title>
+            <table-ref>tick-table</table-ref>
+            <column>time</column>
+        </list>
+        <!-- Define graph to draw for your Instrument (optional) -->
+        
+        <!-- Define at least one detail view for your Instrument -->
+    </instrument>
     <!-- Instruments Developer Help: https://help.apple.com/instruments/developer/mac/current/ -->
-
+    
     <!-- MARK: Schema Definitions -->
     <!-- Define point and interval schemas needed to represent the input and output tables your package will use. -->
     <!-- Two kinds are available: schemas with automatically generated modelers, and schemas that require custom modelers -->

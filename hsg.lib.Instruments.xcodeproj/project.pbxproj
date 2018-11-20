@@ -84,8 +84,8 @@
 			isa = PBXGroup;
 			children = (
 				8412A96521A2363500D36C28 /* 自定义instruments.md */,
-				8412A96021A1C05400D36C28 /* MyInstrument.instrpkg */,
 				8427139A21A255EF00DE64C9 /* 自定义Instruments下.md */,
+				8412A96021A1C05400D36C28 /* MyInstrument.instrpkg */,
 			);
 			path = MyInstrument;
 			sourceTree = "<group>";
