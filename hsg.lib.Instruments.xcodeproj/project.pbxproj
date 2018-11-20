@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8412A96121A1C05400D36C28 /* MyInstrument.instrpkg in Sources */ = {isa = PBXBuildFile; fileRef = 8412A96021A1C05400D36C28 /* MyInstrument.instrpkg */; };
+		848B40DE21A421C300E6B1B9 /* 0.plist in Resources */ = {isa = PBXBuildFile; fileRef = 848B40DD21A421C300E6B1B9 /* 0.plist */; };
 		84D9E642219AE110000A39D0 /* hsg_lib_Instruments.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84D9E638219AE110000A39D0 /* hsg_lib_Instruments.framework */; };
 		84D9E647219AE110000A39D0 /* hsg_lib_InstrumentsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D9E646219AE110000A39D0 /* hsg_lib_InstrumentsTests.swift */; };
 		84D9E649219AE110000A39D0 /* hsg_lib_Instruments.h in Headers */ = {isa = PBXBuildFile; fileRef = 84D9E63B219AE110000A39D0 /* hsg_lib_Instruments.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -17,7 +18,6 @@
 		84D9E67F219AF3E6000A39D0 /* ImageUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D9E67C219AF3E5000A39D0 /* ImageUtilities.swift */; };
 		84D9E680219AF3E6000A39D0 /* SearchResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D9E67D219AF3E5000A39D0 /* SearchResultsViewController.swift */; };
 		84D9E682219AF4AB000A39D0 /* images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84D9E681219AF4AB000A39D0 /* images.xcassets */; };
-		C0CDD39E85B3407F09D2CACE /* Pods_hsg_lib_Instruments.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38728205E0BA4625A28E65FB /* Pods_hsg_lib_Instruments.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,11 +33,12 @@
 /* Begin PBXFileReference section */
 		38728205E0BA4625A28E65FB /* Pods_hsg_lib_Instruments.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_hsg_lib_Instruments.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		55ADCA5C2A748AA292D447D9 /* Pods-hsg.lib.Instruments.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hsg.lib.Instruments.release.xcconfig"; path = "../../../../Pods/Target Support Files/Pods-hsg.lib.Instruments/Pods-hsg.lib.Instruments.release.xcconfig"; sourceTree = "<group>"; };
-		5A34D58944F7546C4C911782 /* Pods-hsg.lib.Instruments.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hsg.lib.Instruments.debug.xcconfig"; path = "../../../../Pods/Target Support Files/Pods-hsg.lib.Instruments/Pods-hsg.lib.Instruments.debug.xcconfig"; sourceTree = "<group>"; };
 		8412A95E21A1C05400D36C28 /* MyInstrument.instrdst */ = {isa = PBXFileReference; explicitFileType = com.apple.instruments.instrdst; includeInIndex = 0; path = MyInstrument.instrdst; sourceTree = BUILT_PRODUCTS_DIR; };
 		8412A96021A1C05400D36C28 /* MyInstrument.instrpkg */ = {isa = PBXFileReference; lastKnownFileType = "com.apple.instruments.package-definition"; path = MyInstrument.instrpkg; sourceTree = "<group>"; };
 		8412A96521A2363500D36C28 /* 自定义instruments.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "自定义instruments.md"; sourceTree = "<group>"; };
 		8427139A21A255EF00DE64C9 /* 自定义Instruments下.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "自定义Instruments下.md"; sourceTree = "<group>"; };
+		848B40DC21A4202D00E6B1B9 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		848B40DD21A421C300E6B1B9 /* 0.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = 0.plist; sourceTree = "<group>"; };
 		84D9E638219AE110000A39D0 /* hsg_lib_Instruments.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = hsg_lib_Instruments.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84D9E63B219AE110000A39D0 /* hsg_lib_Instruments.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hsg_lib_Instruments.h; sourceTree = "<group>"; };
 		84D9E63C219AE110000A39D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -53,11 +54,17 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0C03CF7C34C865F1967FB606 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		84D9E635219AE110000A39D0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C0CDD39E85B3407F09D2CACE /* Pods_hsg_lib_Instruments.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,6 +100,7 @@
 		84D9E62E219AE110000A39D0 = {
 			isa = PBXGroup;
 			children = (
+				848B40DC21A4202D00E6B1B9 /* README.md */,
 				84D9E63A219AE110000A39D0 /* hsg.lib.Instruments */,
 				84D9E645219AE110000A39D0 /* hsg.lib.InstrumentsTests */,
 				8412A95F21A1C05400D36C28 /* MyInstrument */,
@@ -122,6 +130,7 @@
 				84D9E67D219AF3E5000A39D0 /* SearchResultsViewController.swift */,
 				84D9E65E219AECE1000A39D0 /* InstrumentsController.swift */,
 				84D9E65B219AE293000A39D0 /* Instruments.storyboard */,
+				848B40DD21A421C300E6B1B9 /* 0.plist */,
 				84D9E681219AF4AB000A39D0 /* images.xcassets */,
 			);
 			path = hsg.lib.Instruments;
@@ -139,7 +148,6 @@
 		F5CDA26678311202AC58FA0D /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				5A34D58944F7546C4C911782 /* Pods-hsg.lib.Instruments.debug.xcconfig */,
 				55ADCA5C2A748AA292D447D9 /* Pods-hsg.lib.Instruments.release.xcconfig */,
 			);
 			name = Pods;
@@ -164,6 +172,7 @@
 			buildConfigurationList = 8412A96421A1C05400D36C28 /* Build configuration list for PBXNativeTarget "MyInstrument" */;
 			buildPhases = (
 				8412A95C21A1C05400D36C28 /* Sources */,
+				0C03CF7C34C865F1967FB606 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -178,7 +187,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 84D9E64C219AE110000A39D0 /* Build configuration list for PBXNativeTarget "hsg.lib.Instruments" */;
 			buildPhases = (
-				7E5861CE2C70086DD17E9556 /* [CP] Check Pods Manifest.lock */,
 				84D9E633219AE110000A39D0 /* Headers */,
 				84D9E634219AE110000A39D0 /* Sources */,
 				84D9E635219AE110000A39D0 /* Frameworks */,
@@ -257,6 +265,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				848B40DE21A421C300E6B1B9 /* 0.plist in Resources */,
 				84D9E65C219AE293000A39D0 /* Instruments.storyboard in Resources */,
 				84D9E682219AF4AB000A39D0 /* images.xcassets in Resources */,
 			);
@@ -270,31 +279,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		7E5861CE2C70086DD17E9556 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-hsg.lib.Instruments-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8412A95C21A1C05400D36C28 /* Sources */ = {
@@ -483,7 +467,6 @@
 		};
 		84D9E64D219AE110000A39D0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5A34D58944F7546C4C911782 /* Pods-hsg.lib.Instruments.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";

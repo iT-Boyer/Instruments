@@ -8,11 +8,14 @@
 
 import XCTest
 @testable import hsg_lib_Instruments
+import hsg_lib_Utils
 
 class hsg_lib_InstrumentsTests: XCTestCase {
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
+        //激活虚拟网络
+        InstallHTTPStubs.activateHttpStub()
     }
 
     override func tearDown() {

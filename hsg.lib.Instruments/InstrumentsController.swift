@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import OHHTTPStubs
+import hsg_lib_Utils
 ///首页面：搜索框，结果列表
 class InstrumentsController: UIViewController {
     
@@ -20,7 +20,8 @@ class InstrumentsController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        //模拟数据
+        InstallHTTPStubs.activateHttpStub()
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "Search", style: .plain, target: nil, action: nil)
     }
     
