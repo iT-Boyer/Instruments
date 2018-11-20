@@ -5,15 +5,17 @@
 	<owner>
 		<name>admin</name>
 	</owner>
-    <!--导入自定义的tick表格-->
+    <!--导入tick系统模版 查找instrument inspector菜单>>>Schema标签 -->
     <import-schema>tick</import-schema>
     
     <!--自定义Instruments的表格-->
     <instrument>
         <id>hsg.lib.MyInstrument</id>
         <title>Ticks</title>
+        <!-- {'System', 'Graphics', 'Energy', 'Behavior', 'Memory', 'CPU'}-->
         <category>Behavior</category>
         <purpose>Instrument 每隔10s绘制</purpose>
+        <!--系统提供24种图标-->
         <icon>Generic</icon>
         
         <create-table>
@@ -66,3 +68,4 @@
     <!-- Each 'template' element specifies the relative path to a .tracetemplate file in the project -->
     <!-- To create a template: start with a blank document, configure with instruments desired, and choose "File -> Save as Template" -->
 </package>
+
