@@ -31,7 +31,6 @@
 
 /* Begin PBXFileReference section */
 		38728205E0BA4625A28E65FB /* Pods_hsg_lib_Instruments.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_hsg_lib_Instruments.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		55ADCA5C2A748AA292D447D9 /* Pods-hsg.lib.Instruments.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hsg.lib.Instruments.release.xcconfig"; path = "../../../../Pods/Target Support Files/Pods-hsg.lib.Instruments/Pods-hsg.lib.Instruments.release.xcconfig"; sourceTree = "<group>"; };
 		8412A95E21A1C05400D36C28 /* MyInstrument.instrdst */ = {isa = PBXFileReference; explicitFileType = com.apple.instruments.instrdst; includeInIndex = 0; path = MyInstrument.instrdst; sourceTree = BUILT_PRODUCTS_DIR; };
 		8412A96021A1C05400D36C28 /* MyInstrument.instrpkg */ = {isa = PBXFileReference; lastKnownFileType = "com.apple.instruments.package-definition"; path = MyInstrument.instrpkg; sourceTree = "<group>"; };
 		8412A96521A2363500D36C28 /* 自定义instruments.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "自定义instruments.md"; sourceTree = "<group>"; };
@@ -145,7 +144,6 @@
 		F5CDA26678311202AC58FA0D /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				55ADCA5C2A748AA292D447D9 /* Pods-hsg.lib.Instruments.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -490,7 +488,6 @@
 		};
 		84D9E64E219AE110000A39D0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 55ADCA5C2A748AA292D447D9 /* Pods-hsg.lib.Instruments.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
