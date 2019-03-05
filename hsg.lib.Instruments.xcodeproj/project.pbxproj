@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		61D123B7B3346BCDC2C2F224 /* Pods_hsg_lib_Instruments.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38728205E0BA4625A28E65FB /* Pods_hsg_lib_Instruments.framework */; };
 		8412A96121A1C05400D36C28 /* MyInstrument.instrpkg in Sources */ = {isa = PBXBuildFile; fileRef = 8412A96021A1C05400D36C28 /* MyInstrument.instrpkg */; };
 		84D9E642219AE110000A39D0 /* hsg_lib_Instruments.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84D9E638219AE110000A39D0 /* hsg_lib_Instruments.framework */; };
 		84D9E647219AE110000A39D0 /* hsg_lib_InstrumentsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D9E646219AE110000A39D0 /* hsg_lib_InstrumentsTests.swift */; };
@@ -30,7 +31,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2FE31A66766DCB7012358216 /* Pods-hsg.lib.Instruments.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hsg.lib.Instruments.debug.xcconfig"; path = "../../Pods/Target Support Files/Pods-hsg.lib.Instruments/Pods-hsg.lib.Instruments.debug.xcconfig"; sourceTree = "<group>"; };
 		38728205E0BA4625A28E65FB /* Pods_hsg_lib_Instruments.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_hsg_lib_Instruments.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E56C7BAAB0786D88F04DF40 /* Pods-hsg.lib.Instruments.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hsg.lib.Instruments.release.xcconfig"; path = "../../Pods/Target Support Files/Pods-hsg.lib.Instruments/Pods-hsg.lib.Instruments.release.xcconfig"; sourceTree = "<group>"; };
 		8412A95E21A1C05400D36C28 /* MyInstrument.instrdst */ = {isa = PBXFileReference; explicitFileType = com.apple.instruments.instrdst; includeInIndex = 0; path = MyInstrument.instrdst; sourceTree = BUILT_PRODUCTS_DIR; };
 		8412A96021A1C05400D36C28 /* MyInstrument.instrpkg */ = {isa = PBXFileReference; lastKnownFileType = "com.apple.instruments.package-definition"; path = MyInstrument.instrpkg; sourceTree = "<group>"; };
 		8412A96521A2363500D36C28 /* 自定义instruments.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "自定义instruments.md"; sourceTree = "<group>"; };
@@ -62,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61D123B7B3346BCDC2C2F224 /* Pods_hsg_lib_Instruments.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,6 +148,8 @@
 		F5CDA26678311202AC58FA0D /* Pods */ = {
 			isa = PBXGroup;
 			children = (
+				2FE31A66766DCB7012358216 /* Pods-hsg.lib.Instruments.debug.xcconfig */,
+				4E56C7BAAB0786D88F04DF40 /* Pods-hsg.lib.Instruments.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -182,6 +188,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 84D9E64C219AE110000A39D0 /* Build configuration list for PBXNativeTarget "hsg.lib.Instruments" */;
 			buildPhases = (
+				9C6CD29874F1E579E8A6725A /* [CP] Check Pods Manifest.lock */,
 				84D9E633219AE110000A39D0 /* Headers */,
 				84D9E634219AE110000A39D0 /* Sources */,
 				84D9E635219AE110000A39D0 /* Frameworks */,
@@ -273,6 +280,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9C6CD29874F1E579E8A6725A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-hsg.lib.Instruments-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8412A95C21A1C05400D36C28 /* Sources */ = {
@@ -461,6 +493,7 @@
 		};
 		84D9E64D219AE110000A39D0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2FE31A66766DCB7012358216 /* Pods-hsg.lib.Instruments.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -489,6 +522,7 @@
 		};
 		84D9E64E219AE110000A39D0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E56C7BAAB0786D88F04DF40 /* Pods-hsg.lib.Instruments.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
